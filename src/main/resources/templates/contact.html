@@ -37,12 +37,12 @@ Contact: gives contact information or a form for visitors to reach out to you.
 
         </section>
         <div class="contact-info">
-            <a href="https://www.linkedin.com/in/emgar" target="_blank"
-                class="linkedin" id="linkedin-link">
-                <img src="../static/images/linkedin.png" alt="LinkedIn"
-                    style="width: 34px; height: 32px;" />
-                www.linkedin.com/in/emgar
-            </a>
+            <div class="linkedin-container">
+                <a href="https://www.linkedin.com/in/emgar" target="_blank" class="linkedin" id="linkedin-link">
+                    <img src="../static/images/linkedin.png" alt="LinkedIn" style="width: 34px; height: 32px;" />
+                    www.linkedin.com/in/emgar
+                </a>
+            </div>            
             <a href="mailto:mgar888@utexas.edu" class="mail" id="email-link">
                 <img src="../static/images/mail.png" alt="Email"
                     style="width: 34px; height: 30px;" />
@@ -52,7 +52,7 @@ Contact: gives contact information or a form for visitors to reach out to you.
 
         <div>
             <h3 class="message-heading">Or, send me a quick message:</h3>
-            <form action="/submitForm" method="post">
+            <form target="_blank" action="https://formsubmit.co/mgar888@utexas.edu" method="POST">
                 <div class="form-group">
                     <label for="from" id="from-label">From:</label>
                     <input type="text" id="from" name="from" required>
@@ -64,6 +64,7 @@ Contact: gives contact information or a form for visitors to reach out to you.
                 <button type="submit">Send Mauricio this Email</button>
             </form>
         </div>
+        
 
     </body>
 </html>

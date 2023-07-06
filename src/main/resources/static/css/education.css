@@ -1,0 +1,79 @@
+.collapsible-heading:hover {
+    background-color: #e0e0e0;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+
+  .collapsible-heading {
+    position: relative;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .collapsible-heading::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transition: transform 0.3s;
+  }
+  
+  .collapsible-heading.active::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  
+
+header h4 {
+    font-style: italic;
+    margin-top: 12px;
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+header h5 {
+    margin-bottom: 3px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header h7 {
+    
+    font-size: 24px;
+    
+    font-weight: bolder;
+    text-decoration:underline;
+}
+
+header h6 {
+    margin-top: 0px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration:underline;
+}
+
+.utlogo{
+    margin-top: -30px;
+}
+
+.excerpt{
+
+}
+
+.collapsible-heading {
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: underline;
+  }
+  
+  .collapsible-content {
+    display: none;
+  }
+
