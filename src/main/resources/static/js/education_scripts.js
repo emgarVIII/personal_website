@@ -1,16 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const collapsibleHeadings = document.querySelectorAll(".collapsible-heading");
-  
-    collapsibleHeadings.forEach(function(heading) {
-      heading.addEventListener("click", function() {
-        this.classList.toggle("active");
-        const content = this.nextElementSibling;
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("open");
+        var content = this.nextElementSibling;
         if (content.style.display === "block") {
-          content.style.display = "none";
+            content.style.display = "none";
         } else {
-          content.style.display = "block";
+            content.style.display = "block";
         }
-      });
     });
-  });
-  
+}

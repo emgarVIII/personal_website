@@ -1,33 +1,39 @@
-.collapsible-heading:hover {
-    background-color: #e0e0e0;
-    color: #333;
-    transition: background-color 0.3s ease;
-  }
-
-  .collapsible-heading {
-    position: relative;
-    padding-right: 20px;
+.collapsible {
+    background-color: #777;
+    color: white;
     cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
   }
   
-  .collapsible-heading::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #000;
-    border-right: 2px solid #000;
-    transition: transform 0.3s;
+  .open, .collapsible:hover {
+    background-color: #555;
   }
   
-  .collapsible-heading.active::before {
-    transform: translateY(-50%) rotate(45deg);
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
   }
   
-  
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.open:after {
+    content: "\2212";
+}
+
 
 header h4 {
     font-style: italic;
@@ -39,41 +45,26 @@ header h4 {
 header h5 {
     margin-bottom: 3px;
     font-size: 22px;
-    font-weight: bold;
-    font-style: italic;
+    font-weight: normal;
+    
 }
 
 header h7 {
-    
-    font-size: 24px;
-    
+    font-size: 28px;
+    font-style: italic;
     font-weight: bolder;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 header h6 {
     margin-top: 0px;
-    font-size: 24px;
+    font-size: 26px;
     font-style: italic;
     font-weight: bolder;
-    text-decoration:underline;
-}
-
-.utlogo{
-    margin-top: -30px;
-}
-
-.excerpt{
-
-}
-
-.collapsible-heading {
-    cursor: pointer;
-    font-size: 25px;
     text-decoration: underline;
-  }
-  
-  .collapsible-content {
-    display: none;
-  }
+}
 
+.utlogo {
+    margin-top: -30px;
+
+}
