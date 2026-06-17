@@ -43,7 +43,7 @@ export const featuredProjects: FeaturedProject[] = [
       { label: "Open case study", href: "https://emgarviii.github.io/liars_dice/" },
       { label: "View repo", href: "https://github.com/emgarVIII/liars_dice" }
     ],
-    image: "/assets/liars-dice-preview.png"
+    image: "./assets/liars-dice-preview.png"
   },
   {
     title: "Stock and Crypto Relationship Analysis",
