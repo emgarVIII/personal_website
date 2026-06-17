@@ -1,1 +1,0 @@
-Front end ONLY (personal portfolio) for Github Pages compatibility.
